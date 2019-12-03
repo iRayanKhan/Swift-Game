@@ -29,14 +29,8 @@ Devices that do not suport iOS 13.
 ### Third party libraries
 * see [LIBRARIES](https://github.com/username/appname/blob/master/LIBRARIES.md) files
 
-## Permissions
-* Any permissions needed by the app
-
-## License 
-* see [LICENSE](https://github.com/username/appname/blob/master/LICENSE.md) file
-
-## Version 
-* Version X.Y
+### Version 
+* Version 1.0 Beta
 
 ## How-to use this code
 * see [INSTRUCTIONS](https://github.com/username/appname/blob/master/INSTRUCTIONS.md) file
@@ -44,8 +38,7 @@ Devices that do not suport iOS 13.
 ## Contact
 #### Developer/Company
 * Homepage: 
-* e-mail: 
-* Twitter: [@twitterhandle](https://twitter.com/twitterhandle "twitterhandle on twitter")
-* other communication/social media
+* e-mail: RayanKhan04@iCloud.com
+* Twitter: [@twitterhandle](https://twitter.com/iRayanKhan "iRayankhan on twitter")
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=username&url=https://github.com/username/appname&title=appname&language=&tags=github&category=software) 
+
