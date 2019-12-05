@@ -17,6 +17,9 @@
 		36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */; };
 		36CE94D02396F3C300551A3E /* Mobile_App_Programming_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94CF2396F3C300551A3E /* Mobile_App_Programming_GameTests.swift */; };
 		36CE94DB2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */; };
+		6A61F577239998FF003527EA /* SoundSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61F576239998FF003527EA /* SoundSystem.swift */; };
+		6A61F58123999DB2003527EA /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A61F57F23999DB2003527EA /* lose.wav */; };
+		6A61F58223999DB2003527EA /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A61F58023999DB2003527EA /* jump.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		36CE94D62396F3C300551A3E /* Mobile App Programming GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile App Programming GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_App_Programming_GameUITests.swift; sourceTree = "<group>"; };
 		36CE94DC2396F3C300551A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A61F576239998FF003527EA /* SoundSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSystem.swift; sourceTree = "<group>"; };
+		6A61F57F23999DB2003527EA /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		6A61F58023999DB2003527EA /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		36CE94B32396F3C200551A3E /* Mobile App Programming Game */ = {
 			isa = PBXGroup;
 			children = (
+				6A61F57E23999DB2003527EA /* assets */,
 				36CE94B42396F3C200551A3E /* AppDelegate.swift */,
 				36CE94B62396F3C200551A3E /* GameScene.sks */,
 				36CE94B82396F3C200551A3E /* Actions.sks */,
@@ -112,6 +119,7 @@
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
 				36CE94C62396F3C300551A3E /* Info.plist */,
+				6A61F576239998FF003527EA /* SoundSystem.swift */,
 			);
 			path = "Mobile App Programming Game";
 			sourceTree = "<group>";
@@ -133,6 +141,15 @@
 			);
 			path = "Mobile App Programming GameUITests";
 			sourceTree = "<group>";
+		};
+		6A61F57E23999DB2003527EA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6A61F57F23999DB2003527EA /* lose.wav */,
+				6A61F58023999DB2003527EA /* jump.wav */,
+			);
+			path = assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -241,6 +258,8 @@
 				36CE94C02396F3C200551A3E /* Main.storyboard in Resources */,
 				36CE94B72396F3C200551A3E /* GameScene.sks in Resources */,
 				36CE94C22396F3C300551A3E /* Assets.xcassets in Resources */,
+				6A61F58223999DB2003527EA /* jump.wav in Resources */,
+				6A61F58123999DB2003527EA /* lose.wav in Resources */,
 				36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */,
 				36CE94B92396F3C200551A3E /* Actions.sks in Resources */,
 			);
@@ -269,6 +288,7 @@
 			files = (
 				36CE94BB2396F3C200551A3E /* GameScene.swift in Sources */,
 				36CE94BD2396F3C200551A3E /* GameViewController.swift in Sources */,
+				6A61F577239998FF003527EA /* SoundSystem.swift in Sources */,
 				36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

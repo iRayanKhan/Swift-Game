@@ -49,6 +49,7 @@ class GameScene: SKScene {
             n.position = pos
             n.strokeColor = SKColor.green
             self.addChild(n)
+            playSFX(filename: "Jump")
         }
     }
     
@@ -106,5 +107,15 @@ class GameScene: SKScene {
         }
         
         self.lastUpdateTime = currentTime
+    }
+    
+    func playBGM(filename: String)
+    {
+        
+    }
+    
+    func playSFX(filename: String)
+    {
+        run(SKAction.playSoundFileNamed(filename.lowercased()+".wav", waitForCompletion: false))
     }
 }
