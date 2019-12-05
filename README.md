@@ -11,20 +11,17 @@
 
 ## Tests
 #### Works on
-iPad Pro 12'
+Devices running iOS 12.0+
 
 #### Does not work on
-Devices that do not suport iOS 13.
+Devices that do not support iOS 12.0+
 
-## Contributors
+
 ### Artwork
 * Any credit to artists(music,images,...)
 
 ### Contributors on GitHub
 * [Contributors](https://github.com/username/appname/graphs/contributors)
-
-### Translations
-* [Transifex](https://www.transifex.com/projects/p/appname/)
 
 ### Third party libraries
 * see [LIBRARIES](https://github.com/username/appname/blob/master/LIBRARIES.md) files
