@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35BF8448239EE425004AA2E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF8447239EE425004AA2E4 /* AVFoundation.framework */; };
+		35BF844A239EE431004AA2E4 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35BF8449239EE431004AA2E4 /* theme.mp3 */; };
 		36713D4C23999B0A001EB89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36713D4B23999B0A001EB89F /* ViewController.swift */; };
 		36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94B42396F3C200551A3E /* AppDelegate.swift */; };
 		36CE94B72396F3C200551A3E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B62396F3C200551A3E /* GameScene.sks */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35BF8447239EE425004AA2E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		35BF8449239EE431004AA2E4 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = theme.mp3; path = ../../../../Downloads/theme.mp3; sourceTree = "<group>"; };
 		36713D4B23999B0A001EB89F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		36CE94B12396F3C200551A3E /* Mobile App Programming Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile App Programming Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94B42396F3C200551A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35BF8448239EE425004AA2E4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35BF8446239EE425004AA2E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BF8447239EE425004AA2E4 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36CE94A82396F3C200551A3E = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 				36CE94CE2396F3C300551A3E /* Mobile App Programming GameTests */,
 				36CE94D92396F3C300551A3E /* Mobile App Programming GameUITests */,
 				36CE94B22396F3C200551A3E /* Products */,
+				35BF8446239EE425004AA2E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +133,7 @@
 				36CE94BE2396F3C200551A3E /* Main.storyboard */,
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
+				35BF8449239EE431004AA2E4 /* theme.mp3 */,
 				36CE94C62396F3C300551A3E /* Info.plist */,
 			);
 			path = "Mobile App Programming Game";
@@ -257,6 +272,7 @@
 			files = (
 				36CE94C02396F3C200551A3E /* Main.storyboard in Resources */,
 				36CE94B72396F3C200551A3E /* GameScene.sks in Resources */,
+				35BF844A239EE431004AA2E4 /* theme.mp3 in Resources */,
 				36CE94C22396F3C300551A3E /* Assets.xcassets in Resources */,
 				6A0C4D3C239EE27B00A09029 /* jump.wav in Resources */,
 				6A0C4D3B239EE27B00A09029 /* lose.wav in Resources */,
