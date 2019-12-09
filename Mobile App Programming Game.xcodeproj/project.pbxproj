@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36713D4C23999B0A001EB89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36713D4B23999B0A001EB89F /* ViewController.swift */; };
 		36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94B42396F3C200551A3E /* AppDelegate.swift */; };
 		36CE94B72396F3C200551A3E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B62396F3C200551A3E /* GameScene.sks */; };
 		36CE94B92396F3C200551A3E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B82396F3C200551A3E /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36713D4B23999B0A001EB89F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		36CE94B12396F3C200551A3E /* Mobile App Programming Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile App Programming Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94B42396F3C200551A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CE94B62396F3C200551A3E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -103,11 +105,12 @@
 		36CE94B32396F3C200551A3E /* Mobile App Programming Game */ = {
 			isa = PBXGroup;
 			children = (
+				36713D4B23999B0A001EB89F /* ViewController.swift */,
+				36CE94BC2396F3C200551A3E /* GameViewController.swift */,
 				36CE94B42396F3C200551A3E /* AppDelegate.swift */,
 				36CE94B62396F3C200551A3E /* GameScene.sks */,
 				36CE94B82396F3C200551A3E /* Actions.sks */,
 				36CE94BA2396F3C200551A3E /* GameScene.swift */,
-				36CE94BC2396F3C200551A3E /* GameViewController.swift */,
 				36CE94BE2396F3C200551A3E /* Main.storyboard */,
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 			files = (
 				36CE94BB2396F3C200551A3E /* GameScene.swift in Sources */,
 				36CE94BD2396F3C200551A3E /* GameViewController.swift in Sources */,
+				36713D4C23999B0A001EB89F /* ViewController.swift in Sources */,
 				36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
