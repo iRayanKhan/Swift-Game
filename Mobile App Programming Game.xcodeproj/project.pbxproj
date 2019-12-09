@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36713D4C23999B0A001EB89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36713D4B23999B0A001EB89F /* ViewController.swift */; };
 		36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94B42396F3C200551A3E /* AppDelegate.swift */; };
 		36CE94B72396F3C200551A3E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B62396F3C200551A3E /* GameScene.sks */; };
 		36CE94B92396F3C200551A3E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B82396F3C200551A3E /* Actions.sks */; };
@@ -18,6 +17,9 @@
 		36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */; };
 		36CE94D02396F3C300551A3E /* Mobile_App_Programming_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94CF2396F3C300551A3E /* Mobile_App_Programming_GameTests.swift */; };
 		36CE94DB2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */; };
+		6A0C4D32239EDEC600A09029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4D31239EDEC600A09029 /* ViewController.swift */; };
+		6A0C4D36239EE00600A09029 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A0C4D34239EE00600A09029 /* lose.wav */; };
+		6A0C4D37239EE00600A09029 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A0C4D35239EE00600A09029 /* jump.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36713D4B23999B0A001EB89F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		36CE94B12396F3C200551A3E /* Mobile App Programming Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile App Programming Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94B42396F3C200551A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CE94B62396F3C200551A3E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		36CE94D62396F3C300551A3E /* Mobile App Programming GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile App Programming GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_App_Programming_GameUITests.swift; sourceTree = "<group>"; };
 		36CE94DC2396F3C300551A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0C4D31239EDEC600A09029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A0C4D34239EE00600A09029 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		6A0C4D35239EE00600A09029 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,8 @@
 		36CE94B32396F3C200551A3E /* Mobile App Programming Game */ = {
 			isa = PBXGroup;
 			children = (
-				36713D4B23999B0A001EB89F /* ViewController.swift */,
+				6A0C4D33239EE00600A09029 /* assets */,
+				6A0C4D31239EDEC600A09029 /* ViewController.swift */,
 				36CE94BC2396F3C200551A3E /* GameViewController.swift */,
 				36CE94B42396F3C200551A3E /* AppDelegate.swift */,
 				36CE94B62396F3C200551A3E /* GameScene.sks */,
@@ -136,6 +141,15 @@
 			);
 			path = "Mobile App Programming GameUITests";
 			sourceTree = "<group>";
+		};
+		6A0C4D33239EE00600A09029 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6A0C4D34239EE00600A09029 /* lose.wav */,
+				6A0C4D35239EE00600A09029 /* jump.wav */,
+			);
+			path = assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -244,6 +258,8 @@
 				36CE94C02396F3C200551A3E /* Main.storyboard in Resources */,
 				36CE94B72396F3C200551A3E /* GameScene.sks in Resources */,
 				36CE94C22396F3C300551A3E /* Assets.xcassets in Resources */,
+				6A0C4D37239EE00600A09029 /* jump.wav in Resources */,
+				6A0C4D36239EE00600A09029 /* lose.wav in Resources */,
 				36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */,
 				36CE94B92396F3C200551A3E /* Actions.sks in Resources */,
 			);
@@ -270,9 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0C4D32239EDEC600A09029 /* ViewController.swift in Sources */,
 				36CE94BB2396F3C200551A3E /* GameScene.swift in Sources */,
 				36CE94BD2396F3C200551A3E /* GameViewController.swift in Sources */,
-				36713D4C23999B0A001EB89F /* ViewController.swift in Sources */,
 				36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9489Q3YVAN;
+				DEVELOPMENT_TEAM = 495RHZY8RA;
 				INFOPLIST_FILE = "Mobile App Programming Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9489Q3YVAN;
+				DEVELOPMENT_TEAM = 495RHZY8RA;
 				INFOPLIST_FILE = "Mobile App Programming Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
