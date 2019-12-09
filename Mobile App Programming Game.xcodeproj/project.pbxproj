@@ -17,6 +17,7 @@
 		36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */; };
 		36CE94D02396F3C300551A3E /* Mobile_App_Programming_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94CF2396F3C300551A3E /* Mobile_App_Programming_GameTests.swift */; };
 		36CE94DB2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */; };
+		C572F884239EDCC600FA21D8 /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572F883239EDCC600FA21D8 /* GameElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		36CE94D62396F3C300551A3E /* Mobile App Programming GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile App Programming GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_App_Programming_GameUITests.swift; sourceTree = "<group>"; };
 		36CE94DC2396F3C300551A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C572F883239EDCC600FA21D8 /* GameElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				36CE94B82396F3C200551A3E /* Actions.sks */,
 				36CE94BA2396F3C200551A3E /* GameScene.swift */,
 				36CE94BC2396F3C200551A3E /* GameViewController.swift */,
+				C572F883239EDCC600FA21D8 /* GameElements.swift */,
 				36CE94BE2396F3C200551A3E /* Main.storyboard */,
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C572F884239EDCC600FA21D8 /* GameElements.swift in Sources */,
 				36CE94BB2396F3C200551A3E /* GameScene.swift in Sources */,
 				36CE94BD2396F3C200551A3E /* GameViewController.swift in Sources */,
 				36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */,

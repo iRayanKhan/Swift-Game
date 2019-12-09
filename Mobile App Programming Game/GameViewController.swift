@@ -16,15 +16,15 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
-        skView.showsFPS = false
-        skView.showsNodeCount = false
+        skView.showsFPS = true
+        skView.showsNodeCount = true
         skView.ignoresSiblingOrder = false
         scene.scaleMode = .resizeFill
         skView.presentScene(scene)
     }
 
     override var shouldAutorotate: Bool {
-        return true
+        return false
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -33,6 +33,10 @@ class GameViewController: UIViewController {
         } else {
             return .all
         }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 
     override var prefersStatusBarHidden: Bool {
