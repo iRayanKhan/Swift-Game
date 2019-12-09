@@ -111,6 +111,11 @@ class GameScene: SKScene {
     
     func playSFX(filename: String)
     {
+        guard (Bundle.main.path(forResource: filename.lowercased(), ofType: "wav") != nil) else
+        {
+            print("Error playing sound \"\(filename.lowercased()).wav\".")
+            return;
+        }
         run(SKAction.playSoundFileNamed(filename.lowercased()+".wav", waitForCompletion: false))
     }
 }
