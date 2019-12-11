@@ -55,6 +55,16 @@ class GameScene: SKScene {
         backgroundColor = SKColor.blue
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
         addChild(player)
+        player.physicsBody = SKPhysicsBody(circleOfRadius: player.size.width/2)
+        player.physicsBody?.linearDamping = 1.1
+        player.physicsBody?.restitution = 0
+        player.physicsBody?.isDynamic = true
+        player.physicsBody?.affectedByGravity = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        player.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+        player.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
     }
 }
 
