@@ -20,6 +20,7 @@
 		36CE94DB2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94DA2396F3C300551A3E /* Mobile_App_Programming_GameUITests.swift */; };
 		6A0C4D3B239EE27B00A09029 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A0C4D39239EE27B00A09029 /* lose.wav */; };
 		6A0C4D3C239EE27B00A09029 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A0C4D3A239EE27B00A09029 /* jump.wav */; };
+		C51C515E23A4228300C7752C /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C515D23A4228300C7752C /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		36CE94DC2396F3C300551A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A0C4D39239EE27B00A09029 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		6A0C4D3A239EE27B00A09029 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		C51C515D23A4228300C7752C /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				36CE94B62396F3C200551A3E /* GameScene.sks */,
 				36CE94B82396F3C200551A3E /* Actions.sks */,
 				36CE94BA2396F3C200551A3E /* GameScene.swift */,
+				C51C515D23A4228300C7752C /* GameOverScene.swift */,
 				36CE94BE2396F3C200551A3E /* Main.storyboard */,
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51C515E23A4228300C7752C /* GameOverScene.swift in Sources */,
 				36CE94BB2396F3C200551A3E /* GameScene.swift in Sources */,
 				36CE94BD2396F3C200551A3E /* GameViewController.swift in Sources */,
 				36713D4C23999B0A001EB89F /* ViewController.swift in Sources */,

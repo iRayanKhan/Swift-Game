@@ -19,6 +19,8 @@ class GameViewController: UIViewController {
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
             
+            
+            
             // Get the SKScene from the loaded GKScene
             if let sceneNode = scene.rootNode as! GameScene? {
                 
@@ -29,8 +31,12 @@ class GameViewController: UIViewController {
                 // Set the scale mode to scale to fit the window
                 sceneNode.scaleMode = .aspectFill
                 
+                sceneNode.viewC = self
+                
                 // Present the scene
                 if let view = self.view as! SKView? {
+                    
+                    
                     view.presentScene(sceneNode)
                     
                     view.ignoresSiblingOrder = true
