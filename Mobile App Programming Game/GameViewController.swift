@@ -14,7 +14,7 @@ class GameViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sound = Bundle.main.path(forResource: "theme", ofType: "mp3")
+        let sound = Bundle.main.path(forResource: "start", ofType: "mp3")
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }

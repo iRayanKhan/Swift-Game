@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		358EEB3D23A96997000BEB48 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 358EEB3C23A96997000BEB48 /* start.mp3 */; };
 		35BF8448239EE425004AA2E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF8447239EE425004AA2E4 /* AVFoundation.framework */; };
-		35BF844A239EE431004AA2E4 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35BF8449239EE431004AA2E4 /* theme.mp3 */; };
 		36713D4C23999B0A001EB89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36713D4B23999B0A001EB89F /* ViewController.swift */; };
 		36CE94B52396F3C200551A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CE94B42396F3C200551A3E /* AppDelegate.swift */; };
 		36CE94B72396F3C200551A3E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36CE94B62396F3C200551A3E /* GameScene.sks */; };
@@ -42,8 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		358EEB3C23A96997000BEB48 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
 		35BF8447239EE425004AA2E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		35BF8449239EE431004AA2E4 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = theme.mp3; path = ../../../../Downloads/theme.mp3; sourceTree = "<group>"; };
 		36713D4B23999B0A001EB89F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		36CE94B12396F3C200551A3E /* Mobile App Programming Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile App Programming Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CE94B42396F3C200551A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 				36CE94BE2396F3C200551A3E /* Main.storyboard */,
 				36CE94C12396F3C300551A3E /* Assets.xcassets */,
 				36CE94C32396F3C300551A3E /* LaunchScreen.storyboard */,
-				35BF8449239EE431004AA2E4 /* theme.mp3 */,
 				36CE94C62396F3C300551A3E /* Info.plist */,
 			);
 			path = "Mobile App Programming Game";
@@ -160,6 +159,7 @@
 		6A0C4D38239EE27B00A09029 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				358EEB3C23A96997000BEB48 /* start.mp3 */,
 				6A0C4D39239EE27B00A09029 /* lose.wav */,
 				6A0C4D3A239EE27B00A09029 /* jump.wav */,
 			);
@@ -272,10 +272,10 @@
 			files = (
 				36CE94C02396F3C200551A3E /* Main.storyboard in Resources */,
 				36CE94B72396F3C200551A3E /* GameScene.sks in Resources */,
-				35BF844A239EE431004AA2E4 /* theme.mp3 in Resources */,
 				36CE94C22396F3C300551A3E /* Assets.xcassets in Resources */,
 				6A0C4D3C239EE27B00A09029 /* jump.wav in Resources */,
 				6A0C4D3B239EE27B00A09029 /* lose.wav in Resources */,
+				358EEB3D23A96997000BEB48 /* start.mp3 in Resources */,
 				36CE94C52396F3C300551A3E /* LaunchScreen.storyboard in Resources */,
 				36CE94B92396F3C200551A3E /* Actions.sks in Resources */,
 			);
