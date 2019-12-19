@@ -1,12 +1,12 @@
-# Generic Name
+# Vortech
 ======
-%App Description%
+A simple game in Swift where you tap to navigate around vortex feild that will *should* suck you in and the more you avoid, the higher your score goes up.
 
 #### Screenshot
 
 ![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
 
-#### App Stores
+#### Download
 [![Download on the AppStore](https://raw.github.com/repat/README-template/master/appstore.png)](https://itunes.apple.com/app/id123456)
 
 ## Tests
@@ -18,24 +18,30 @@ Devices that do not support iOS 12.0+
 
 
 ### Artwork
-* Any credit to artists(music,images,...)
+* "Google Images"
 
 ### Contributors on GitHub
-* [Contributors](https://github.com/username/appname/graphs/contributors)
+* [Contributors](https://github.com/iRayanKhan/Swift-Game/blob/master/.github/Contributors.md)
 
-### Third party libraries
-* see [LIBRARIES](https://github.com/username/appname/blob/master/LIBRARIES.md) files
+### Libraries
+* SpriteKit
+* UiKit
+* GameplayKit
+* SceneKit
 
 ### Version 
 * Version 1.0 Beta
 
 ## How-to use this code
-* see [INSTRUCTIONS](https://github.com/username/appname/blob/master/INSTRUCTIONS.md) file
+* ``` Download this project```
+* ``` Open the Xcode project File in Xcode```
+* ``` Select a simulator size (iPhone Xr in Xcode 10, 11 in Xcode 11)```
+* ``` Build and run```
 
 ## Contact
 #### Developer/Company
-* Homepage: 
+* Homepage: AnAppThatIsntComplete.net
 * e-mail: RayanKhan04@iCloud.com
-* Twitter: [@twitterhandle](https://twitter.com/iRayanKhan "iRayankhan on twitter")
+* Twitter: [@iRayanKhan](https://twitter.com/iRayanKhan "iRayankhan on twitter")
 
 
