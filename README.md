@@ -22,6 +22,7 @@ Devices that do not support iOS 12.0+
 
 ### Contributors on GitHub
 * [Contributors](https://github.com/iRayanKhan/Swift-Game/blob/master/.github/Contributors.md)
+* [Our Trello Board](https://trello.com/b/C6HtjRLJ/3a-saucer) 
 
 ### Libraries
 * SpriteKit
