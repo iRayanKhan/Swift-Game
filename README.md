@@ -4,7 +4,7 @@ A simple game in Swift where you tap to navigate around vortex feild that will *
 
 #### Screenshot
 
-![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
+![Screenshot iOS](https://github.com/iRayanKhan/Swift-Game/blob/master/Demo.png?raw=true")
 
 #### Download
 [![Download on the AppStore](https://raw.github.com/repat/README-template/master/appstore.png)](https://itunes.apple.com/app/id123456)
