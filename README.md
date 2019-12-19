@@ -1,5 +1,5 @@
 # Vortech
-======
+
 A simple game in Swift where you tap to navigate around vortex feild that will *should* suck you in and the more you avoid, the higher your score goes up.
 
 #### Screenshot
