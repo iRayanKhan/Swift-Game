@@ -52,47 +52,35 @@ extension CGPoint {
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "test")
+    
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
     
     private var lastUpdateTime : TimeInterval = 0
-    private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.blue
-        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
+        player.position = CGPoint(x: size.width * -0.2, y: size.height * 0.1)
         addChild(player)
         player.physicsBody = SKPhysicsBody(circleOfRadius: player.size.width/2)
         player.physicsBody?.linearDamping = 1.1
         player.physicsBody?.restitution = 0
         player.physicsBody?.isDynamic = true
         player.physicsBody?.affectedByGravity = true
+        
+        run(SKAction.repeatForever(SKAction.sequence([
+            SKAction.run(spawnBlackHole),
+            
+            SKAction.wait(forDuration: 2.0)
+            ])))
+        
+        
     }
     
     override func sceneDidLoad() {
 
         self.lastUpdateTime = 0
-        
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
     }
     
     
@@ -121,9 +109,6 @@ class GameScene: SKScene {
     }*/
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
         //for t in touches { self.touchDown(atPoint: t.location(in: self)) }
         player.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
         player.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
@@ -159,6 +144,33 @@ class GameScene: SKScene {
         }
         
         self.lastUpdateTime = currentTime
+    }
+    
+    func rng() -> CGFloat {
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+    }
+    
+    func rng(min: CGFloat, max: CGFloat) -> CGFloat
+    {
+        return rng() * (max - min) + min
+    }
+    
+    func spawnBlackHole()
+    {
+        let blackhole = SKSpriteNode(imageNamed: "vortex")
+        blackhole.size = CGSize(width: blackhole.size.width, height: blackhole.size.height)
+        blackhole.position = CGPoint(x: size.width * 0.9, y: rng(min: size.height * -0.5, max: size.height * 0.5))
+        
+        let speed = 2.0
+        
+        let moveAction = SKAction.move(by: CGVector(dx: size.width * -2.5,  dy: 0), duration: TimeInterval(speed))
+        let dieAction = SKAction.removeFromParent()
+        
+        
+        
+        addChild(blackhole)
+        
+        blackhole.run(SKAction.sequence([moveAction, dieAction]))
     }
     
     func playSFX(filename: String)
